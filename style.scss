@@ -1,0 +1,232 @@
+$header-logo-background: #282828;
+$header-background: #949381;
+$nav-selected: #ffe022;
+$nav-color: #white;
+$text-light: #c5c5c5;
+$font-stack: 'Alef', sans-serif;
+$text-main: #414141;
+$hr-color: #bababa;
+@mixin paddings($paddingSize) {
+  float: left;
+  padding-top: 30px;
+  padding-left: ($paddingSize);
+  padding-right: ($paddingSize);
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 100% $font-stack;
+  background-color: #eaeaea;
+  padding-top: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+hr {
+  border: none;
+  border-top: 1px dotted $hr-color;
+  color: #fff;
+  margin: 0 auto;
+  height: 1px;
+  width: 97%;
+}
+.inline {
+  display: inline-block;
+}
+.title {
+  background: $header-logo-background;
+  width: 100%;
+  height: 50px;
+  h3 {
+    color: $text-light;
+    font-weight: lighter;
+    float: right;
+    margin-right: 13em;
+    margin-top: 7px;
+  }
+}
+.navbar {
+  float: left;
+  li {
+    background: white;
+    padding: 10px 15px 10px 30px;
+    list-style: none;
+    color: $text-main;
+    border-bottom: 1px dotted $hr-color;
+    &:hover {
+      background: $nav-selected;
+      cursor: pointer;
+    }
+  }
+  li:first-child {
+    background: $header-logo-background;
+    color: #ededed;
+  }
+}
+.header-main {
+  width: 105%;
+  position: relative;
+  left: 0;
+  top: -60px;
+  height: 430px;
+  background: $header-background;
+  transform: rotate(1deg);
+  z-index: -1;
+  border-bottom: solid 20px #605f52;
+  box-shadow: 1px 5px 15px grey;
+  h1 {
+    transform: rotate(-1deg);
+    line-height: 90%;
+    color: white;
+    padding-top: 100px;
+    padding-right: 305px;
+    font-size: 60px;
+    text-shadow: 0 1px 1px black;
+    font-weight: lighter;
+  }
+  p {
+    transform: rotate(-1deg);
+    color: $header-logo-background;
+    padding-right: 305px;
+    font-size: 23px;
+    text-shadow: 0 0.6px 1px white;
+  }
+}
+.courses {
+  box-shadow: 0 6px 6px -6px #c6c6c6;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+.boxes {
+  margin-top: 50px;
+  min-height: 430px;
+  width: 65%;
+  margin: 0 auto;
+}
+.box-headers {
+
+  // padding-right: 220px;
+  // padding-left: 180px;
+  height: 40px;
+  width: 63%;
+  margin: 0 auto;
+  border-bottom: 1px dotted $hr-color;
+  h2 {
+    float: right;
+  }
+  p {
+    padding-top: 5px;
+    float: left;
+  }
+}
+.main-wrapper {
+  margin-top: 130px;
+  position: relative;
+  float: right;
+}
+.main-wrapper:first-child {
+  margin-right: -6px;
+}
+.wrapper {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 255px;
+  height: 280px;
+  background: white;
+  border-radius: 40px;
+  padding: 10px 20px 5px;
+  box-sizing: border-box;
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  section {
+    background-color: #d0eae9;
+    border-radius: 30px;
+    padding: 2px 20px 5px 15px;
+    h3 {
+      color: $header-logo-background;
+      font-size: 17px;
+    }
+    p {
+      color: $header-logo-background;
+    }
+  }
+}
+.image {
+  width: 500px;
+  position: absolute;
+  top: -110px;
+  left: -30%;
+  z-index: -1;
+}
+.event-info {
+  z-index: 1;
+  width: 100%;
+  background: #dcdcdc;
+  min-height: 400px;
+  @include paddings(14.9em);
+  h2 {
+    font-size: 30px;
+  }
+  .short-line {
+    width: 28%;
+    line-height: 100%;
+  }
+  small {
+    font-size: 13px;
+    color: #737373;
+    width: 50%;
+  }
+  section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+    ol {
+      list-style-position: inside;
+    }
+    pre {
+      color: #737373;
+    }
+  }
+  span {
+    font-size: 40px;
+  }
+  .inline {
+    padding-bottom: 10px;
+  }
+}
+.event-border {
+  border-bottom: 1px solid $hr-color;
+  div {
+    display: inline-block;
+  }
+}
+.sign-up {
+  @include paddings(14.9em);
+  width: 100%;
+  background: $header-background;
+  min-height: 400px;
+}
+
+// TODO: drop all min height when finished
+.usefull-info {
+  @include paddings(14.9em);
+  background: #dcdcdc;
+  width: 100%;
+  min-height: 400px;
+}
+.half-width {
+  width: 49%;
+  h2 {
+    font-size: 33px;
+    color: #737373;
+  }
+  * {
+    display: inline-block;
+  }
+}

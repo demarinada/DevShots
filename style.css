@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 100% "Alef", sans-serif;
+  background-color: #eaeaea;
+  padding-top: 0;
+  max-width: 100%;
+  overflow-x: hidden; }
+
+hr {
+  border: none;
+  border-top: 1px dotted #bababa;
+  color: #fff;
+  margin: 0 auto;
+  height: 1px;
+  width: 97%; }
+
+.inline {
+  display: inline-block; }
+
+.title {
+  background: #282828;
+  width: 100%;
+  height: 50px; }
+  .title h3 {
+    color: #c5c5c5;
+    font-weight: lighter;
+    float: right;
+    margin-right: 13em;
+    margin-top: 7px; }
+
+.navbar {
+  float: left; }
+  .navbar li {
+    background: white;
+    padding: 10px 15px 10px 30px;
+    list-style: none;
+    color: #414141;
+    border-bottom: 1px dotted #bababa; }
+    .navbar li:hover {
+      background: #ffe022;
+      cursor: pointer; }
+  .navbar li:first-child {
+    background: #282828;
+    color: #ededed; }
+
+.header-main {
+  width: 105%;
+  position: relative;
+  left: 0;
+  top: -60px;
+  height: 430px;
+  background: #949381;
+  transform: rotate(1deg);
+  z-index: -1;
+  border-bottom: solid 20px #605f52;
+  box-shadow: 1px 5px 15px grey; }
+  .header-main h1 {
+    transform: rotate(-1deg);
+    line-height: 90%;
+    color: white;
+    padding-top: 100px;
+    padding-right: 305px;
+    font-size: 60px;
+    text-shadow: 0 1px 1px black;
+    font-weight: lighter; }
+  .header-main p {
+    transform: rotate(-1deg);
+    color: #282828;
+    padding-right: 305px;
+    font-size: 23px;
+    text-shadow: 0 0.6px 1px white; }
+
+.courses {
+  box-shadow: 0 6px 6px -6px #c6c6c6;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2; }
+
+.boxes {
+  margin-top: 50px;
+  min-height: 430px;
+  width: 65%;
+  margin: 0 auto; }
+
+.box-headers {
+  height: 40px;
+  width: 63%;
+  margin: 0 auto;
+  border-bottom: 1px dotted #bababa; }
+  .box-headers h2 {
+    float: right; }
+  .box-headers p {
+    padding-top: 5px;
+    float: left; }
+
+.main-wrapper {
+  margin-top: 130px;
+  position: relative;
+  float: right; }
+
+.main-wrapper:first-child {
+  margin-right: -6px; }
+
+.wrapper {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  width: 255px;
+  height: 280px;
+  background: white;
+  border-radius: 40px;
+  padding: 10px 20px 5px;
+  box-sizing: border-box; }
+  .wrapper p {
+    margin-top: 10px;
+    font-size: 14px; }
+  .wrapper section {
+    background-color: #d0eae9;
+    border-radius: 30px;
+    padding: 2px 20px 5px 15px; }
+    .wrapper section h3 {
+      color: #282828;
+      font-size: 17px; }
+    .wrapper section p {
+      color: #282828; }
+
+.image {
+  width: 500px;
+  position: absolute;
+  top: -110px;
+  left: -30%;
+  z-index: -1; }
+
+.event-info {
+  z-index: 1;
+  width: 100%;
+  background: #dcdcdc;
+  min-height: 400px;
+  float: left;
+  padding-top: 30px;
+  padding-left: 14.9em;
+  padding-right: 14.9em;
+  box-sizing: border-box; }
+  .event-info h2 {
+    font-size: 30px; }
+  .event-info .short-line {
+    width: 28%;
+    line-height: 100%; }
+  .event-info small {
+    font-size: 13px;
+    color: #737373;
+    width: 50%; }
+  .event-info section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%; }
+    .event-info section ol {
+      list-style-position: inside; }
+    .event-info section pre {
+      color: #737373; }
+  .event-info span {
+    font-size: 40px; }
+  .event-info .inline {
+    padding-bottom: 10px; }
+
+.event-border {
+  border-bottom: 1px solid #bababa; }
+  .event-border div {
+    display: inline-block; }
+
+.sign-up {
+  float: left;
+  padding-top: 30px;
+  padding-left: 14.9em;
+  padding-right: 14.9em;
+  box-sizing: border-box;
+  width: 100%;
+  background: #949381;
+  min-height: 400px; }
+
+.usefull-info {
+  float: left;
+  padding-top: 30px;
+  padding-left: 14.9em;
+  padding-right: 14.9em;
+  box-sizing: border-box;
+  background: #dcdcdc;
+  width: 100%;
+  min-height: 400px; }
+
+.half-width {
+  width: 49%; }
+  .half-width h2 {
+    font-size: 33px;
+    color: #737373; }
+  .half-width * {
+    display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
